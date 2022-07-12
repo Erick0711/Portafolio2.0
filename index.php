@@ -25,7 +25,7 @@
                 <ul>
                     <li><a href="./">Inicio</a></li>
                     <li><a href="./proyectos">Proyectos</a></li>
-                    <li><a href="/contacto">Contacto</a></li>
+                    <li><a href="./contacto">Contacto</a></li>
                 </ul>
             </nav>
         </div>
@@ -52,22 +52,7 @@
                  <div class="fila-2">
                     <?php include_once("./images/svg/erick.svg"); ?>
             </div>
-            <!-- <div class="showcase-form card">
-                <h2>Request a Demo</h2>
-                 <form>
-                    <div class="form-control">
-                        <input type="text" name="name" placeholder="Name" required>
-                    </div>
-                    <div class="form-control">
-                        <input type="text" name="company" placeholder="Company Name" required>
-                    </div>
-                    <div class="form-control">
-                        <input type="email" name="email" placeholder="Email" required>
-                    </div>
-                    <input type="submit" value="Send" class="btn btn-primary">
-                </form>
-            </div>
-        </div> -->
+        
     </section>
 
     <!-- Stats -->
