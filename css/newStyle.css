@@ -1,0 +1,142 @@
+.google-font-300{
+    font-family: 'Amatic SC', cursive ;
+
+    font-family: 'Barlow Condensed', sans-serif;
+
+    font-family: 'Poppins', sans-serif;
+
+    font-family: 'Roboto', sans-serif;
+
+    font-family: 'Roboto Serif', serif;
+
+    font-family: 'Ubuntu Mono', monospace;
+
+    font-weight: 300;
+}
+
+.google-font-900{
+    font-family: 'Amatic SC', cursive ;
+
+    font-family: 'Barlow Condensed', sans-serif;
+
+    font-family: 'Poppins', sans-serif;
+
+    font-family: 'Roboto', sans-serif;
+
+    font-family: 'Roboto Serif', serif;
+
+    font-family: 'Ubuntu Mono', monospace;
+
+    font-weight: 900;
+}
+.logo-portafolio{
+    max-width: 35px;
+    height: auto;
+    transition: 1s ease all;
+}
+.logo-portafolio:hover{
+    max-width: 40px;
+}
+.logo-item:hover{
+    border-bottom: none !important;
+}
+
+/* ITEM SOCIAL */
+.item-social{   
+    display: flex;
+    justify-content: left;
+    flex-direction: row;
+    list-style-type: none;
+    margin-top: 10px;
+}
+.item-social li a img{
+    width: 35px;
+    height: 30px;
+}
+.item-social li{
+    margin-top: 10px;
+    margin-right: 20px;
+}
+
+
+/* SVG DE IMAGEN ERICK */
+.erick-svg{
+    max-width: 350px;
+}
+
+/* ANIMACION DE ERICK SVG */
+
+#sol-js,#sol-js2{
+    animation: moveSol 8s ease;
+}
+
+#movimiento1,#movimiento2,#movimiento3{
+    animation: fila1 3s ease infinite;
+}
+
+#php,#css{
+    animation: bootstrap 3s ease infinite;
+}
+
+#html{
+    animation: html 3s ease infinite;
+}
+
+/* KEY FRAMES DE ERICK SVG */
+@keyframes moveSol{
+    from{transform: rotate(20deg);}
+}
+
+@keyframes fila1{
+    0%, 100%{
+        transform: translateX(-5px);
+    }
+
+    50%{
+        transform: translateX(8px);
+    }
+}
+
+@keyframes bootstrap{
+    0%, 100%{       
+        transform: translateY(-15px);
+    }
+
+    50%{
+        transform: translateY(15px);
+    }
+}
+
+@keyframes html{
+    0%, 100%{       
+        transform: translateY(20px);
+    }
+
+    50%{
+        transform: translateY(-20px);
+    }
+}
+
+/* KEY FRAMES PARA PORTAFOLIO */
+
+/* DESCRIPCION DATOS PROYECTO */
+.proyectos-images{
+    max-width: 5.5rem;
+}
+
+/* HERRAMIENTAS DE DESARROLLO */
+
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 150px;
+}
+.container-H{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 25px;
+}
