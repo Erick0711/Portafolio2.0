@@ -30,7 +30,7 @@
             </nav>
         </div>
     </div>
-    
+
     <!-- DESCRIPCION -->
     <section class="showcase google-font-300">
         <div class="container grid">
@@ -55,7 +55,14 @@
         
     </section>
 
-    <!-- Stats -->
+    <div style="height: 150px; overflow: hidden;" >
+    <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
+        <path d="M-3.67,22.20 C145.87,117.92 286.96,-70.55 511.00,42.92 L501.40,-9.37 L0.00,0.00 Z" style="stroke: none; fill: #b97c37;">
+        </path>
+    </svg>
+    </div>
+
+    <!-- Descripcion Datos de Proyectos-->
     <section class="stats google-font-900">
         <div class="container">
             <h3 class="stats-heading text-center my-1">
