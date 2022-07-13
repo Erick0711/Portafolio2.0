@@ -11,7 +11,7 @@
 </head>
 <body>
     <!-- Navbar -->
-    <div class="navbar">
+    <div class="navbar google-font-300">
         <div class="container flex">
         <h1 class="logo-portafolio"><a class="logo-item" href="./" title="portafolio-inicio"><img src="./images/portafolio.png" alt="imagen-portafolio"></a></h1>
             <nav>
@@ -22,16 +22,18 @@
                 </ul>
             </nav>
         </div>
-    </div>
-    
-    <form action="" class="form flex-form">
-        <div class="form-item flex-form">
-            <input type="text">
-            <input type="text">
-            <input type="email">
-            <textarea name="" id="" cols="30" rows="10"></textarea>
-            <input type="submit" value="Enviar">
+    </div>  
+        <form action="" class="form google-font-300">
+
+        <div class="form-item flex-form" >
+        <h1>Contacto</h1>
+            <input type="text" class="txtnombre" name="nombre" placeholder="Nombre">
+            <input type="text" class="txtapellido" name="apellido" placeholder="Apellido">
+            <input type="email" class="txtemail" name="email" placeholder="Email">
+            <textarea class="txtmensaje"name="mensaje" placeholder="Mensaje..."></textarea>
+            <input type="submit" value="Enviar" name="enviar" class="btn-enviar">
         </div>
     </form>
+
 </body>
 </html>
