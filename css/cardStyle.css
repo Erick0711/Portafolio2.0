@@ -81,11 +81,7 @@
   transition: 1s all;
 }
 .visitar-item:hover{
-<<<<<<< HEAD
   max-width: 1.1gitrem;
-=======
-  max-width: 1.1rem;
->>>>>>> proyecto
 }
 .visitar{
   display: flex;
