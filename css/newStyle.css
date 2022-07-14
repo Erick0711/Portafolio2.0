@@ -169,11 +169,12 @@
     min-width: 80%;
     padding: 10px;
     border-radius: 10px;
-    border: 1px solid rgb(168, 155, 155);
-    transition: 1se all;
+    border: none;
+    transition: 1s all;
+    background-color: #f5f5dc;
 } 
 .txtnombre:focus,.txtapellido:focus,.txtemail:focus,.txtmensaje:focus{
-border: 2px solid rgb(31, 103, 136);
+border: 1px solid #f5f5dc;
 outline: none !important;
 }
 .txtmensaje{
@@ -194,6 +195,6 @@ outline: none !important;
     background-color: #cc812c;
     color: rgb(223, 213, 213);
 }
-input:focus::placeholder {
+input:focus::placeholder , textarea:focus::placeholder {
     color: transparent;
 }

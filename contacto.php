@@ -30,7 +30,7 @@
             <input type="text" class="txtnombre" name="nombre" placeholder="Nombre">
             <input type="text" class="txtapellido" name="apellido" placeholder="Apellido">
             <input type="email" class="txtemail" name="email" placeholder="Email">
-            <textarea class="txtmensaje"name="mensaje" placeholder="Mensaje..."></textarea>
+            <textarea class="txtmensaje"name="mensaje" placeholder="Asunto..."></textarea>
             <input type="submit" value="Enviar" name="enviar" class="btn-enviar">
         </div>
     </form>

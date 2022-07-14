@@ -111,7 +111,6 @@ pre {
 
 /* Stats */
 .stats {
-  padding-top: 100px;
   animation: slideInFromBottom 1s ease-in;
 }
 
