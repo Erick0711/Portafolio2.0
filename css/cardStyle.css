@@ -81,7 +81,7 @@
   transition: 1s all;
 }
 .visitar-item:hover{
-  max-width: 1.1gitrem;
+  max-width: 1.1rem;
 }
 .visitar{
   display: flex;
