@@ -10,30 +10,20 @@
     <title>Contacto</title>
 </head>
 <body>
-    <!-- Navbar -->
-    <div class="navbar google-font-300">
-        <div class="container flex">
-        <h1 class="logo-portafolio"><a class="logo-item" href="./" title="portafolio-inicio"><img src="./images/portafolio.png" alt="imagen-portafolio"></a></h1>
-            <nav>
-                <ul>
-                    <li><a href="./">Inicio</a></li>
-                    <li><a href="./proyectos">Proyectos</a></li>
-                    <li><a href="./contacto">Contacto</a></li>
-                </ul>
-            </nav>
-        </div>
-    </div>  
-        <form action="" class="form google-font-300">
+   <!-- Cabecera -->
+   <?php include_once("./plantilla/header.php");?>
 
-        <div class="form-item flex-form" >
-        <h1>Contacto</h1>
-            <input type="text" class="txtnombre" name="nombre" placeholder="Nombre">
-            <input type="text" class="txtapellido" name="apellido" placeholder="Apellido">
-            <input type="email" class="txtemail" name="email" placeholder="Email">
-            <textarea class="txtmensaje"name="mensaje" placeholder="Asunto..."></textarea>
-            <input type="submit" value="Enviar" name="enviar" class="btn-enviar">
-        </div>
-    </form>
+   <!-- Formulario de contacto -->
+        <form action="" class="form google-font-300">
+            <div class="form-item flex-form" >
+                <h1>Contacto</h1>
+                <input type="text" class="txtnombre" name="nombre" placeholder="Nombre">
+                <input type="text" class="txtapellido" name="apellido" placeholder="Apellido">
+                <input type="email" class="txtemail" name="email" placeholder="Email">
+                <textarea class="txtmensaje"name="mensaje" placeholder="Asunto..."></textarea>
+                <input type="submit" value="Enviar" name="enviar" class="btn-enviar">
+            </div>
+        </form>
 
 </body>
 </html>

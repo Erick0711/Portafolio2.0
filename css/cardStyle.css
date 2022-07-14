@@ -1,19 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 * {
   box-sizing: border-box;
+  margin: 0;
 }
-body {
+.contenedor {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0;
-  background-color: #f7f8fc;
-  font-family: "Roboto", sans-serif;
-  color: #10182f;
-}
-.container {
-  display: flex;
-  width: 1040px;
+  width: 100%;
   justify-content: space-evenly;
   flex-wrap: wrap;
 }
@@ -37,6 +31,7 @@ body {
   align-items: flex-start;
   padding: 20px;
   min-height: 250px;
+  gap: 10px;
 }
 
 .tag {
@@ -61,7 +56,6 @@ body {
 
 .card-body p {
   font-size: 13px;
-  margin: 0 0 40px;
 }
 .user {
   display: flex;
@@ -79,4 +73,17 @@ body {
 }
 .user-info small {
   color: #545d7a;
+}
+
+/* Demos + link de github */
+.visitar-item{
+  max-width: 1.5rem;
+  transition: 1s all;
+}
+.visitar-item:hover{
+  max-width: 1.1rem;
+}
+.visitar{
+  display: flex;
+  gap: 25px;
 }
