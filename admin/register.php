@@ -10,17 +10,17 @@
     <title>Login</title>
 </head>
 <body>
-
+<a href="./">Volver</a>
         <form action="" class="form google-font-300">
-            <div class="form-item flex-register" >
-                <h1 class="titulo">Registrase</h1>
+            <div class="form-item grid-register" >
+                <h1 class="titulo">Registro</h1>
                 <input type="text" class="txtnombre" name="nombre" placeholder="Nombre">
                 <input type="text" class="txtapellido" name="apellido" placeholder="Apellido">
                 <input type="email" class="txtemail" name="email" placeholder="Email">
                 <input type="number" class="txtuser" max="1000" min="1" name="user" placeholder="Usuario" required>
 
                 <input type="password" class="txtpassword" name="password" placeholder="Passoword" required>
-                <input type="password" class="txtpassword" name="passwordConfir" placeholder="Confirmar Contraseña" required>
+                <input type="password" class="txtpasswordconfir" name="passwordConfir" placeholder="Confirmar Contraseña" required>
 
                 <input type="submit" value="Registrarse" name="enviar" class="btn-enviar"> 
             </div>
