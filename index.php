@@ -1,3 +1,5 @@
+<?php include($_SERVER['DOCUMENT_ROOT']."/Portafolio2.0/admin/Controllador/mostrar.php"); ?>
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -51,7 +53,7 @@
     </svg>
     </div>
 
-    <!-- Descripcion Datos de Proyectos-->
+    <!-- Descripcion Datos de Proyectos + Muestra de datos de proyectos -->
     <section class="stats google-font-900">
         <div class="container">
             <h3 class="stats-heading text-center my-1">
@@ -61,18 +63,18 @@
             <div class="grid grid-3 text-center my-4">
             <div>
                     <img src="./images/progreso.png" alt="Progreso-imagen" class="proyectos-images">
-                    <h3>1</h3>
+                    <h3><?php echo $contarEnProceso;?></h3>
                     <p class="text-secondary">En progreso</p>
                 </div>
                 <div>
                 <img src="./images/desplegado.png" alt="Progreso-imagen" class="proyectos-images">
-                    <h3>1</h3>
+                    <h3><?php echo $contarDespliegues;?></h3>
                     <p class="text-secondary">Desplegados</p>
                 </div>
                 <div>
                 <img src="./images/proyectos.png" alt="Progreso-imagen" class="proyectos-images">
-
-                    <h3>5</h3>
+                    
+                    <h3><?php echo $contarProyectos;?></h3>
                     <p class="text-secondary">Proyectos</p>
                 </div>
             </div>

@@ -1,3 +1,5 @@
+<?php include($_SERVER['DOCUMENT_ROOT']."/Portafolio2.0/admin/Controllador/mostrar.php"); ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,19 +18,21 @@
    <?php include_once("./plantilla/header.php");?>
 
 <div class="contenedor">
-
+  <?php foreach($proyectos as $proyecto){ 
+    if($proyecto['estado'] == 1){
+    ?>
   <div class="card">
     <div class="card-header">
       <img src="https://c0.wallpaperflare.com/preview/483/210/436/car-green-4x4-jeep.jpg" alt="rover" />
     </div>
     <div class="card-body">
     <div class="lenguajes">
-      <span class="tag tag-teal">php</span>
+      <span class="tag tag-teal"><?php echo $proyecto['lenguajes']; ?></span>
       <span class="tag tag-teal">css</span>
       <span class="tag tag-teal">html</span>
       </div>
 
-      <h4>Fitcamp Club Activa</h4>
+      <h4><?php echo $proyecto['nombre'];  ?></h4>
 
       <p>Creación e informacion acerca del local mas integracion de una administracion que registra usuarios y productos</p>
 
@@ -46,7 +50,10 @@
     </div>
   </div>
   
-
+<?php
+    } 
+}
+?>
     </div>
 </body>
 </html>
