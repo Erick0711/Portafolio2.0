@@ -21,7 +21,7 @@
                 <input type="password" class="txtpassword" name="password" placeholder="Passoword" required>
                 <input type="password" class="txtpasswordconfir" name="passwordConfir" placeholder="Confirmar Contraseña" required>
 
-                <input type="submit" value="Registrarse" name="enviar" class="btn-enviar"> 
+                <input type="submit" value="Registrarse" name="enviar" class="btn btn-enviar"> 
             </div>
         </form>
 

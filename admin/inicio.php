@@ -16,19 +16,45 @@
 <body>
     <?php include("./plantilla/header.php");?>
   <section class="home-section">
+
   <form action="" class="form google-font-300">
-            <div class="form-item grid-register" >
+            <div class="form-item grid-proyecto" >
                 <h1 class="titulo">Registrar Proyecto</h1>
-                <input type="text" class="txtnombre" name="nombre" placeholder="Nombre">
-                <input type="text" class="txtapellido" name="descripcion" placeholder="Descripcion">
-                <input type="url" class="txtemail" name="enlace_git" placeholder="Repositorio Git">
-                <input type="url" class="txtuser"name="Enlace_pagina" placeholder="Link Pagina Web">
+                <input type="text" class="nombreProyecto" name="nombreProyecto" placeholder="Nombre">
 
-                <input type="file" class="file" name="img_proyec">
+                <div class="fileimage">
+                  <p id="fileName"></p>
+                  <label for="file"><i class='bx bx-upload'></i></label>
+                <input type="file" id="file" class="file" name="img_proyec">
+                </div>
 
-                <input type="submit" value="Registrarse" name="enviar" class="btn-enviar"> 
+                <input type="url" class="enlaceGithub" name="enlace_git" placeholder="Repositorio Github">
+                <input type="url" class="enlaceWeb"name="Enlace_pagina" placeholder="Link Pagina Web">
+                <textarea class="descripcion" name="descripcion" id="" cols="30" rows="10" placeholder="Descripcion..."></textarea>
+                
+                <div class="lenguajes">
+                  <div class="nombreLenguaje">
+                  <label for="">HTML</label>
+                  <label for="">CSS</label>
+                  <label for="">JS</label>
+                  <label for="">PHP</label>
+                  </div>
+                  <div class="valores">
+                  <input type="checkbox" name="html" value="html">
+
+                  <input type="checkbox" name="css" value="css">
+
+                  <input type="checkbox" name="js" value="js">
+
+                  <input type="checkbox" name="php" value="php">
+                  </div>
+                </div>
+                
+
+                <input type="submit" value="Registrar" name="enviar" class="btn btn-registrar"> 
             </div>
         </form>
+
   </section>
   <script>
   let sidebar = document.querySelector(".sidebar");
@@ -53,6 +79,12 @@
      closeBtn.classList.replace("bx-menu-alt-right","bx-menu");//replacing the iocns class
    }
   }
+  </script>
+  <script>
+    let file = document.querySelector('#file');
+    file.addEventListener('change',()=>{
+      document.querySelector('#fileName').innerText = file.files[0].name;
+    });
   </script>
 </body>
 </html>
