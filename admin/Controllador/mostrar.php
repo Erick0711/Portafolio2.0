@@ -18,5 +18,19 @@
     // CONTAR DATOS QUE TODAVIA SIGAN EN PROCESOS QUE SU ESTADO SEA = 0
     $contarEnProceso = $consulta->contar("SELECT count(estado) from proyectos WHERE estado=0");
 
+
+    // MOSTRAR REGISTRO DE LA TABLA RELACIONAL DE LENGUAJES DE MAQUETACION
+    $maquetaciones = $consulta->mostrar("SELECT * FROM lenguaje_maquetacion_id");
+
+    // MOSTRAR REGISTRO DE LA TABLA RELACIONAL DE LENGUAJES DE MAQUETACION
+    $diseños = $consulta->mostrar("SELECT * FROM lenguaje_diseño_id");
+
+    // MOSTRAR REGISTRO DE LA TABLA RELACIONAL DE LENGUAJES DE MAQUETACION
+    $interacciones = $consulta->mostrar("SELECT * FROM lenguaje_iteraccion_id");
+
+    // MOSTRAR REGISTRO DE LA TABLA RELACIONAL DE LENGUAJES DE MAQUETACION
+    $programaciones = $consulta->mostrar("SELECT * FROM lenguaje_programacion_id");
+
+
     // header("Location:../")
 ?>

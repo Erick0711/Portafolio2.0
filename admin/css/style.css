@@ -168,8 +168,8 @@ outline: none !important;
     grid-column: 1 / 2;
     max-width: 18rem;
     min-width: 18rem;
-    max-height: 7rem;
-    min-height: 7rem;
+    max-height: 10rem;
+    min-height: 10rem;
 }
 .lenguajes{
     grid-column: 2 / 4;
@@ -180,17 +180,27 @@ outline: none !important;
 .nombreLenguaje{
     display: flex;
     flex-direction: column;
+    gap: 12px;
     grid-column: 1 / 2;
     color: #5c5b59;
 }
 .valores{
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    gap: 15px;
     grid-column: 2 / 4;
 }
 .btn-registrar{
     grid-column: 1 / 4;
+}
+
+/* SELECTORES */
+.selector{
+    border: none;
+    background-color: #b97c37;
+    color: white;
+    border: 1px solid #a37746;
+    border-radius: 5px;
 }
 /* MQ */
 @media screen and (max-width: 725px) {

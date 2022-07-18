@@ -1,7 +1,5 @@
-<!-- 
-<a href="./">Volver</a>
- -->
-        <!DOCTYPE html>
+<?php require($_SERVER['DOCUMENT_ROOT'])."/Portafolio2.0/admin/Controllador/mostrar.php"; ?>
+<!DOCTYPE html>
 <!-- Created by CodingLab |www.youtube.com/CodingLabYT-->
 <html lang="en" dir="ltr">
   <head>
@@ -17,7 +15,7 @@
     <?php include("./plantilla/header.php");?>
   <section class="home-section">
 
-  <form action="" class="form google-font-300">
+  <form action="./Controllador/agregar.php" class="form google-font-300" enctype="multipart/form-data" method="POST">
             <div class="form-item grid-proyecto" >
                 <h1 class="titulo">Registrar Proyecto</h1>
                 <input type="text" class="nombreProyecto" name="nombreProyecto" placeholder="Nombre">
@@ -25,28 +23,44 @@
                 <div class="fileimage">
                   <p id="fileName"></p>
                   <label for="file"><i class='bx bx-upload'></i></label>
-                <input type="file" id="file" class="file" name="img_proyec">
+                <input type="file" id="file" class="file" name="archivo">
                 </div>
 
-                <input type="url" class="enlaceGithub" name="enlace_git" placeholder="Repositorio Github">
-                <input type="url" class="enlaceWeb"name="Enlace_pagina" placeholder="Link Pagina Web">
+                <input type="url" class="enlaceGithub" name="enlaceGit" placeholder="Repositorio Github">
+                <input type="url" class="enlaceWeb"name="EnlaceWeb" placeholder="Link Pagina Web">
                 <textarea class="descripcion" name="descripcion" id="" cols="30" rows="10" placeholder="Descripcion..."></textarea>
                 
                 <div class="lenguajes">
                   <div class="nombreLenguaje">
-                  <label for="">HTML</label>
-                  <label for="">CSS</label>
-                  <label for="">JS</label>
-                  <label for="">PHP</label>
+                  <label for="">Maquetación</label>
+                  <label for="">Diseño</label>
+                  <label for="">Interacción</label>
+                  <label for="">Programación</label>
                   </div>
                   <div class="valores">
-                  <input type="checkbox" name="html" value="html">
+                  <select name="maquetacion" class="selector">
+                  <?php foreach($maquetaciones as $maquetacion){ ?> 
+                    <option value="<?php echo $maquetacion['id'] ?>"><?php echo $maquetacion['nombre'];?></option>
+                    <?php } ?> 
+                  </select>
 
-                  <input type="checkbox" name="css" value="css">
+                  <select name="diseño" class="selector">
+                   <?php foreach($diseños as $diseño){ ?> 
+                    <option value="<?php echo $diseño['id'] ?>"><?php echo $diseño['nombre'];?></option>
+                    <?php } ?> 
+                  </select>
 
-                  <input type="checkbox" name="js" value="js">
+                  <select name="interaccion" class="selector">
+                  <?php foreach($interacciones as $interaccion){ ?> 
+                    <option value="<?php echo $interaccion['id'] ?>"><?php echo $interaccion['nombre'];?></option>
+                    <?php } ?> 
+                  </select>
 
-                  <input type="checkbox" name="php" value="php">
+                  <select name="programacion" class="selector">
+                  <?php foreach($programaciones as $programacion){ ?> 
+                    <option value="<?php echo $programacion['id'] ?>"><?php echo $programacion['nombre'];?></option>
+                    <?php } ?> 
+                  </select>
                   </div>
                 </div>
                 

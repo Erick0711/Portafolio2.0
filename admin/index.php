@@ -19,7 +19,7 @@
                     <a href="./register.php">Registrarse</a>
                     <a href="">Olvide mi contraseña</a>
                 </div>
-                <input type="submit" value="Iniciar Sesión" name="enviar" class="btn-enviar"> 
+                <input type="submit" value="Iniciar Sesión" name="enviar" class="btn"> 
             </div>
         </form>
 
