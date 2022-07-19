@@ -1,4 +1,6 @@
-<?php require($_SERVER['DOCUMENT_ROOT'])."/Portafolio2.0/admin/Controllador/mostrar.php"; ?>
+<?php include($_SERVER['DOCUMENT_ROOT'])."/Portafolio2.0/admin/Controllador/mostrar.php"; ?>
+
+
 <!DOCTYPE html>
 <!-- Created by CodingLab |www.youtube.com/CodingLabYT-->
 <html lang="en" dir="ltr">
@@ -14,7 +16,6 @@
 <body>
     <?php include("./plantilla/header.php");?>
   <section class="home-section">
-
   <form action="./Controllador/agregar.php" class="form google-font-300" enctype="multipart/form-data" method="POST">
             <div class="form-item grid-proyecto" >
                 <h1 class="titulo">Registrar Proyecto</h1>
@@ -38,25 +39,30 @@
                   <label for="">Programación</label>
                   </div>
                   <div class="valores">
+
                   <select name="maquetacion" class="selector">
-                  <?php foreach($maquetaciones as $maquetacion){ ?> 
+                  <option value="0">Seleccionar</option>
+                  <?php foreach($maquetaciones as $maquetacion){ ?>
                     <option value="<?php echo $maquetacion['id'] ?>"><?php echo $maquetacion['nombre'];?></option>
                     <?php } ?> 
                   </select>
 
                   <select name="diseño" class="selector">
+                  <option value="0">Seleccionar</option>
                    <?php foreach($diseños as $diseño){ ?> 
                     <option value="<?php echo $diseño['id'] ?>"><?php echo $diseño['nombre'];?></option>
                     <?php } ?> 
                   </select>
 
                   <select name="interaccion" class="selector">
+                  <option value="0">Seleccionar</option>
                   <?php foreach($interacciones as $interaccion){ ?> 
-                    <option value="<?php echo $interaccion['id'] ?>"><?php echo $interaccion['nombre'];?></option>
+                    <option  value="<?php echo $interaccion['id'] ?>"><?php echo $interaccion['nombre'];?></option>
                     <?php } ?> 
                   </select>
 
                   <select name="programacion" class="selector">
+                  <option value="0">Seleccionar</option>
                   <?php foreach($programaciones as $programacion){ ?> 
                     <option value="<?php echo $programacion['id'] ?>"><?php echo $programacion['nombre'];?></option>
                     <?php } ?> 

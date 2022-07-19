@@ -1,14 +1,15 @@
 <?php  
 
 class Proyecto{
-    protected $id;
-    protected $nombre;
-    protected $descripcion;
-    protected $imagen;
-    protected $lenguajes;
-    protected $enlaceGithub;
-    protected $enlaceWeb;
-    protected $fecha; 
+    public $nombre;
+    public $descripcion;
+    public $archivo;
+    public $lenguajesMaquetacion;
+    public $lenguajesDiseño;
+    public $lenguajesInteraccion;
+    public $lenguajesProgramacion;
+    public $enlaceGithub;
+    public $enlaceWeb;
 }
 
 ?>

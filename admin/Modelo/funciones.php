@@ -1,5 +1,8 @@
 <!-- AGREGAR PROYECTOS -->
-<?php include($_SERVER['DOCUMENT_ROOT']."/Portafolio2.0/admin/Modelo/ConexionBD.php"); ?>
+<?php 
+include($_SERVER['DOCUMENT_ROOT']."/Portafolio2.0/admin/Modelo/ConexionBD.php"); 
+require($_SERVER['DOCUMENT_ROOT']."/Portafolio2.0/admin/Modelo/proyecto.php");
+?>
 
 <?php 
     class funciones extends Conexion{
@@ -9,7 +12,7 @@
             parent::__construct();
             
     }
-        public function mostrar($sql){
+        public function consultar($sql){
             $consulta = $this->conexion->prepare($sql);
             $consulta->execute();
             $registros = $consulta->fetchAll();
@@ -24,6 +27,8 @@
     
             return $resultado;
         }
+        
 }
+
 
 ?>

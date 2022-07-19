@@ -201,7 +201,14 @@ outline: none !important;
     color: white;
     border: 1px solid #a37746;
     border-radius: 5px;
+    transition: 1s all;
 }
+/* OPCIONES */
+
+.selector:hover{
+    background-color: #c2853f;
+}
+
 /* MQ */
 @media screen and (max-width: 725px) {
 
