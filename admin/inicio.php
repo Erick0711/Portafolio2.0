@@ -27,8 +27,8 @@
                 <input type="file" id="file" class="file" name="archivo">
                 </div>
 
-                <input type="url" class="enlaceGithub" name="enlaceGit" placeholder="Repositorio Github">
-                <input type="url" class="enlaceWeb"name="EnlaceWeb" placeholder="Link Pagina Web">
+                <input type="text" class="enlaceGithub" name="enlaceGit" placeholder="Repositorio Github">
+                <input type="text" class="enlaceWeb"name="EnlaceWeb" placeholder="Link Pagina Web">
                 <textarea class="descripcion" name="descripcion" id="" cols="30" rows="10" placeholder="Descripcion..."></textarea>
                 
                 <div class="lenguajes">
@@ -43,28 +43,28 @@
                   <select name="maquetacion" class="selector">
                   <option value="0">Seleccionar</option>
                   <?php foreach($maquetaciones as $maquetacion){ ?>
-                    <option value="<?php echo $maquetacion['id'] ?>"><?php echo $maquetacion['nombre'];?></option>
+                    <option value="<?php echo $maquetacion['id'] ?>"><?php echo $maquetacion['nombre_maquetacion'];?></option>
                     <?php } ?> 
                   </select>
 
                   <select name="diseño" class="selector">
                   <option value="0">Seleccionar</option>
                    <?php foreach($diseños as $diseño){ ?> 
-                    <option value="<?php echo $diseño['id'] ?>"><?php echo $diseño['nombre'];?></option>
+                    <option value="<?php echo $diseño['id'] ?>"><?php echo $diseño['nombre_disenio'];?></option>
                     <?php } ?> 
                   </select>
 
                   <select name="interaccion" class="selector">
                   <option value="0">Seleccionar</option>
                   <?php foreach($interacciones as $interaccion){ ?> 
-                    <option  value="<?php echo $interaccion['id'] ?>"><?php echo $interaccion['nombre'];?></option>
+                    <option  value="<?php echo $interaccion['id'] ?>"><?php echo $interaccion['nombre_interaccion'];?></option>
                     <?php } ?> 
                   </select>
 
                   <select name="programacion" class="selector">
                   <option value="0">Seleccionar</option>
                   <?php foreach($programaciones as $programacion){ ?> 
-                    <option value="<?php echo $programacion['id'] ?>"><?php echo $programacion['nombre'];?></option>
+                    <option value="<?php echo $programacion['id'] ?>"><?php echo $programacion['nombre_programacion'];?></option>
                     <?php } ?> 
                   </select>
                   </div>

@@ -3,7 +3,13 @@
 <?php  
     $consulta = new funciones();
     // MOSTRAR REGISTROS
-    $proyectos = $consulta->consultar("SELECT * FROM proyectos");
+    $proyectos = $consulta->consultar("SELECT 
+    proyectos.id, proyectos.nombres, proyectos.descripcion, proyectos.imagen ,proyectos.github, proyectos.sitioweb, lenguaje_diseño_id.nombre_disenio, lenguaje_maquetacion_id.nombre_maquetacion, lenguaje_iteraccion_id.nombre_interaccion, lenguaje_programacion_id.nombre_programacion, proyectos.fecha,proyectos.estado
+    FROM proyectos 
+    INNER JOIN lenguaje_diseño_id ON proyectos.lenguaje_diseño = lenguaje_diseño_id.id
+    INNER JOIN lenguaje_maquetacion_id ON proyectos.lenguaje_maquetacion = lenguaje_maquetacion_id.id
+    INNER JOIN lenguaje_iteraccion_id ON proyectos.lenguajes_interaccion = lenguaje_iteraccion_id.id
+    INNER JOIN lenguaje_programacion_id ON proyectos.lenguaje_programacion = lenguaje_programacion_id.id;");
 
 
     // CONTAR CANTIDAD DE DATOS
