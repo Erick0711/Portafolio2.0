@@ -19,32 +19,34 @@
 
 <div class="contenedor">
   <?php foreach($proyectos as $proyecto){ 
-    if($proyecto['estado'] == 1){
+    if($proyecto['estado'] == 0){
     ?>
   <div class="card">
     <div class="card-header">
-      <img src="https://c0.wallpaperflare.com/preview/483/210/436/car-green-4x4-jeep.jpg" alt="rover" />
+      <img src="./images/proyectoImagenes/<?php echo $proyecto['imagen']; ?>" alt="Imagen" />
     </div>
     <div class="card-body">
     <div class="lenguajes">
-      <span class="tag tag-teal"><?php echo $proyecto['lenguajes']; ?></span>
-      <span class="tag tag-teal">css</span>
-      <span class="tag tag-teal">html</span>
+      <span class="tag tag-teal"><?php echo $proyecto['nombre_disenio']; ?></span>
+      <span class="tag tag-teal"><?php echo $proyecto['nombre_maquetacion']; ?></span>
+      <span class="tag tag-teal"><?php echo $proyecto['nombre_interaccion'];?> </span>
+      <span class="tag tag-teal"><?php echo $proyecto['nombre_programacion'];?></span>
       </div>
 
-      <h4><?php echo $proyecto['nombre'];  ?></h4>
+      <h4><?php echo $proyecto['nombres'];  ?></h4>
 
-      <p>Creación e informacion acerca del local mas integracion de una administracion que registra usuarios y productos</p>
+      <p><?php echo $proyecto['descripcion'];?></p>
 
       <div class="visitar">
-      <a href="#"><img src="./images/icon/github.png" alt="Repositorio-Github" class="visitar-item"></a>
-      <a href="" ><img src="./images/icon/enlace.png" alt="Visitar-Pagina" class="visitar-item"></a>
+      <a href="<?php echo $proyecto['github'];?>" target="_blank"><img src="./images/icon/github.png" alt="Repositorio-Github" class="visitar-item"></a>
+      <a href="<?php echo $proyecto['sitioweb'];?>"target="_blank"><img src="./images/icon/enlace.png" alt="Visitar-Pagina" class="visitar-item"></a>
       </div>
 
       <div class="user">
         <!-- <img src="https://yt3.ggpht.com/a/AGF-l7-0J1G0Ue0mcZMw-99kMeVuBmRxiPjyvIYONg=s900-c-k-c0xffffffff-no-rj-mo" alt="user" /> -->
         <div class="user-info">
-          <small><strong>Ultima Actualización: </strong>07/17/2022</small>
+          <small><strong>Ultima Actualización: </strong></small>
+          <p><?php echo $proyecto['fecha'];?></p>
         </div>
       </div>
     </div>
